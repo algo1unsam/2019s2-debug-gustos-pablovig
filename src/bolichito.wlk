@@ -31,4 +31,8 @@ object bolichito {
 	method puedeOfrecerleAlgoA(persona) {
 		return persona.leGusta(objetoEnMostrador) or persona.leGusta(objetoEnVidriera)
 	}
+	
+	method seHizolaLuz(){
+		return (objetoEnMostrador.material().brilla() ) or (objetoEnVidriera.material)
+	}
 }

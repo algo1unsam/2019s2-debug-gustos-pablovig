@@ -88,3 +88,23 @@ test "El bolichito con una remera y una pelota puede ofrecerle algo a Luisa" {
 	
 	assert.notThat(bolichito.puedeOfrecerleAlgoA(luisa))
 }
+
+test "Un bolichito con un banquito en mostrador y una cajita de cobre con una pelota dentro en vidriera no está desequilibrado y tiene algo naranja."{
+	cajita.setMaterial(cobre)
+	cajita.pesoInt(pelota)
+	bolichito.ponerEnMostrador(banquito)
+	bolichito.ponerEnVidriera(cajita)
+	
+	assert.notThat(bolichito.estaDesequilibrado())
+	assert.that(bolichito.tieneAlgoDeColor(naranja))
+}
+
+test "Un bolichito con un banquito en mostrador y una cajita de cobre con una arito dentro en vidriera no está desequilibrado y tiene algo naranja."{
+	cajita.setMaterial(cobre)
+	cajita.pesoInt(arito)
+	bolichito.ponerEnMostrador(banquito)
+	bolichito.ponerEnVidriera(cajita)
+	
+	assert.that(bolichito.estaDesequilibrado())
+	assert.that(bolichito.tieneAlgoDeColor(naranja))
+}
