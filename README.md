@@ -30,7 +30,9 @@ Y tener tests que prueben los siguientes casos:
 
 ## Se hizo la luz
 
-- Ahora también queremos saber si **el bolichito tiene luz** que se cumple cuando alguno de los dos objetos está hecho de un material que conduce la electricidad. De los amteriales que tenemos por ahora, solo el cobre conduce la electricidad.
+- Ahora también queremos saber si **el bolichito tiene luz** que se cumple cuando alguno de los dos objetos
+ está hecho de un material que conduce la electricidad. De los amteriales que tenemos por ahora, solo
+  el cobre conduce la electricidad.
 
 - Agregar como material al plomo que puede estar en uno de sus tres estados: _natural_, _cromado_ u _oxidado_.
   - Cuando está al natural, el material brilla pero no conduce la electricidad.
@@ -42,3 +44,6 @@ Y tener tests que prueben los siguientes casos:
   - Un bolichito con un muñeco de 500 gramos en mostrador y una cajita de plomo con un arito dentro es brillante pero no tiene luz.
   - La misma situación pero con una cajita de plomo cromado, entonces el bolichito es brillante y tiene luz.
   - La misma situación pero con una cajita de plomo oxidado, entonces el bolichito no es brillante ni tiene luz.
+
+  - Hacer un test que pruebe una cajita de cobre con un muñeco que pesa 100 dentro,
+   primero pesa 500, si cambio el peso del muñeco a 400 entonces el peso total debería ser 800

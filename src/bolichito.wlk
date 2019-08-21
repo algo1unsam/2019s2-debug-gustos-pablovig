@@ -32,7 +32,7 @@ object bolichito {
 		return persona.leGusta(objetoEnMostrador) or persona.leGusta(objetoEnVidriera)
 	}
 	
-	method seHizolaLuz(){
-		return (objetoEnMostrador.material().brilla() ) or (objetoEnVidriera.material)
+	method seHizoLaLuz(){
+		return (objetoEnMostrador.material().conduce() ) or (objetoEnVidriera.material().conduce())
 	}
 }

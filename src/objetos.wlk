@@ -16,8 +16,11 @@ object madera { method brilla() { return false }
 				method conduce(){return false} }
 object cuero { method brilla() { return false }
 			   method conduce(){return false} }
-object plomo { var est=natural method estado(estado) {return estado}
-}
+object plomo { var est=natural 
+			   method estado(objeto) {est=objeto}
+			   method returnPlomo(){return est}
+			   method brilla() { return est.brilla() }
+			   method conduce(){return est.conduce()}}
 
 /* objetos */
 object remera {
@@ -78,13 +81,13 @@ object banquito{
 object cajita {
 	
 	var _material
-	var _peso
+	var _objeto
 	
 	method color(){return rojo}
 	method material(){return _material}
 	method setMaterial(material){_material=material}
-	method peso(){return _peso}
-	method pesoInt(objeto){_peso = 400 + objeto.peso()}
+	method peso(){return 400 + _objeto.peso()}
+	method objetoInt(objeto){_objeto=objeto}
 }
 
 /*Estados*/
@@ -103,4 +106,3 @@ object cromado{
 	method conduce(){return true}
 }
 
-/*Hacer un test que pruebe una cajita de cobre con un muñeco que pesa 100 dentro, primero pesa 500, si cambio el peso del muñeco a 400 entonces el peso total debería ser 800*/
